@@ -20,13 +20,12 @@ export default function Recurrence() {
     SA: {
       hub_id: "ae03ad00-c2c5-46ca-a1a7-689cbd668a3c",
       queue_id: "63d44ce85a9f42248a7a4f72",
-      leaderboard_id: "63c59fe9c2d6ee7da7d102a0",
+      leaderboard_id: "63daaf33c2d6ee7da7a85db5",
     },
     CSA: {
-      hub_id: "81752520-7bad-42a7-a70d-d43fd66011de",
-      queue_id: "6340418ad7689d5091584220",
-      leaderboard_id: "634967c64c180a16e15ded04",
-    },
+      hub_id: "74effb8b-0155-4ae5-9a3a-3097c9833b7d",
+      queue_id: "63d994246d84301789b0d428",
+      leaderboard_id: "63dc08555ca9066d45790e1a",
   };
 
   const [entity, setEntity] = useState(
