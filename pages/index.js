@@ -561,7 +561,7 @@ export default function Home() {
       </main>
       <footer className={styles.footer}>
         <a
-          className="font-sora max-w-fit"
+          className="max-w-fit"
           href="https://www.nestgo.online"
           target="blank"
           rel="noopener noreferrer"
