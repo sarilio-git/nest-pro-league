@@ -155,7 +155,7 @@ export default function Home() {
               HUB | NESTGO
             </option>
             <option className="text-base font-play font-bold" value="CSA">
-              FPL C CSGO South America
+              NEST PRO LEAGUE | NPL
             </option>
             <option className="text-base font-play font-bold" value="EU">
               FPL CSGO Europe
