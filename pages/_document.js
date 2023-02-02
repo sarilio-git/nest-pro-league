@@ -26,7 +26,7 @@ export default function Document() {
           name="description"
           content="Página para assistir o HUB da NPL"
         />
-        <link rel="icon" href="/nestlogo.ico" />
+        <link rel="icon" href="/nestlogo.ico"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link
           rel="preconnect"
