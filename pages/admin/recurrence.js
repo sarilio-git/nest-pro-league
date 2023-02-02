@@ -27,26 +27,6 @@ export default function Recurrence() {
       queue_id: "6340418ad7689d5091584220",
       leaderboard_id: "634967c64c180a16e15ded04",
     },
-    NA: {
-      hub_id: "748cf78c-be73-4eb9-b131-21552f2f8b75",
-      queue_id: "5ec3276bf69bec00070a854b",
-      leaderboard_id: "6337441ebb87d174a4e7e8f1",
-    },
-    CNA: {
-      hub_id: "b6895a52-a70c-41d6-b096-7d05377720c4",
-      queue_id: "5aa05432f4ae3d0007e9e0c8",
-      leaderboard_id: "633741aff6d76e5b1c1911e6",
-    },
-    EU: {
-      hub_id: "74caad23-077b-4ef3-8b1d-c6a2254dfa75",
-      queue_id: "5a200f64aa4cb20006161700",
-      leaderboard_id: "6335bf42bb87d174a4d9bbf8",
-    },
-    CEU: {
-      hub_id: "fd5780d5-dd2f-4479-906c-57b8e41ae9d7",
-      queue_id: "5a200f62aa4cb200061616fe",
-      leaderboard_id: "6335c033f6d76e5b1c0ae062",
-    },
   };
 
   const [entity, setEntity] = useState(
@@ -74,6 +54,11 @@ export default function Recurrence() {
       <Head>
         <title>WatchFPL Admin - Recurrence</title>
       </Head>
+      <a href="https://www.nestgo.online">
+      <div className="w-2000 h-200 mt-10 ml-10 absolute top-0 left-0">
+        <img className="h-24 w-25" src="/nest_logohw.png" alt="Logo" />
+      </div>
+    </a>
       <main className={styles.main}>
         <select
           onChange={(e) => handleSelectHub(e.target.value)}
