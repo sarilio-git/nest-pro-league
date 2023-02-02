@@ -6,9 +6,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'play': ['Play', 'sans-serif'],
-      'red-hat': ['Red Hat Display', 'sans-serif'],
-    },
+      'Sora': ['Sora', 'sans-serif'],
+        },
     extend: {},
   },
   plugins: [require('daisyui')],
