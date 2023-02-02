@@ -74,19 +74,7 @@ export default function Recurrence() {
           <option className="text-base font-play font-bold" value="CSA">
           NEST PRO LEAGUE | NPL
           </option>
-          <option className="text-base font-play font-bold" value="EU">
-            FPL CSGO Europe
-          </option>
-          <option className="text-base font-play font-bold" value="CEU">
-            FPL C CSGO Europe
-          </option>
-          <option className="text-base font-play font-bold" value="NA">
-            FPL CSGO North America
-          </option>
-          <option className="text-base font-play font-bold" value="CNA">
-            FPL C CSGO North America
-          </option>
-        </select>
+                 </select>
         <div className="overflow-x-auto w-full">
           <table className="table w-full">
             <thead>

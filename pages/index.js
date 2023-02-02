@@ -562,22 +562,13 @@ export default function Home() {
       <footer className={styles.footer}>
         <a
           className="font-base max-w-fit"
-          href="https://github.com/Conrage"
+          href="https://www.nestgo.online"
           target="blank"
           rel="noopener noreferrer"
         >
-          Powered by{" "}
-          <span className="ml-1 font-semibold text-blue-500">Crazynn</span>
+          nest - GAME ON, LEARN ON
         </a>
-        <a
-          target="blank"
-          className="font-base p-2 max-w-fit h-fit rounded-lg bg-white"
-          href="https://github.com/Conrage/watch-fpl"
-        >
-          <img className="h-6" src="/github.png"></img>
-        </a>
-        <div className="font-base flex gap-2 h-6"><img className="h-6" src="/PIX.png"></img> jvococonrad@gmail.com</div>
-      </footer>
+          </footer>
     </div>
   );
 }
