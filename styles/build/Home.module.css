@@ -111,6 +111,10 @@
   margin-left: 0.5rem;
 }
 
+.font-sora {
+  font-family: 'Sora', sans-serif;
+}
+
 .nestlogo-container {
   position: absolute;
   top: 0;
