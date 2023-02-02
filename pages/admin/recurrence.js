@@ -18,9 +18,9 @@ export default function Recurrence() {
 
   const translateId = {
     SA: {
-      hub_id: "ef607668-a51a-4ea6-8b7b-dab07e0ab151",
-      queue_id: "633f0132403c133d88b9832b",
-      leaderboard_id: "6346d436feeb182ac0852df8",
+      hub_id: "ae03ad00-c2c5-46ca-a1a7-689cbd668a3c",
+      queue_id: "63d44ce85a9f42248a7a4f72",
+      leaderboard_id: "63c59fe9c2d6ee7da7d102a0",
     },
     CSA: {
       hub_id: "81752520-7bad-42a7-a70d-d43fd66011de",
@@ -84,10 +84,10 @@ export default function Recurrence() {
           className="text-4xl font-play font-bold mb-4 text-center select select-ghost w-fit"
         >
           <option className="text-base font-play font-bold" value="SA">
-            FPL CSGO South America
+          HUB | NESTGO
           </option>
           <option className="text-base font-play font-bold" value="CSA">
-            FPL C CSGO South America
+          NEST PRO LEAGUE | NPL
           </option>
           <option className="text-base font-play font-bold" value="EU">
             FPL CSGO Europe

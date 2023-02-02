@@ -20,24 +20,14 @@ export default function Home() {
     SA: {
       hub_id: "ae03ad00-c2c5-46ca-a1a7-689cbd668a3c",
       queue_id: "63d44ce85a9f42248a7a4f72",
-      leaderboard_id: "63c59fe9c2d6ee7da7d102a0",
+      leaderboard_id: "63daaf33c2d6ee7da7a85db5",
     },
     CSA: {
-      hub_id: "ae03ad00-c2c5-46ca-a1a7-689cbd668a3c",
-      queue_id: "63d44ce85a9f42248a7a4f72",
-      leaderboard_id: "63b062004ca62004dd41b32b",
+      hub_id: "74effb8b-0155-4ae5-9a3a-3097c9833b7d",
+      queue_id: "63d994246d84301789b0d428",
+      leaderboard_id: "63dc08555ca9066d45790e1a",
     },
-    EU: {
-      hub_id: "fd5780d5-dd2f-4479-906c-57b8e41ae9d7",
-      queue_id: "5a200f62aa4cb200061616fe",
-      leaderboard_id: "63b062004ca62004dd41b32b",
-    },
-    CEU: {
-      hub_id: "74caad23-077b-4ef3-8b1d-c6a2254dfa75",
-      queue_id: "5a200f64aa4cb20006161700",
-      leaderboard_id: "ae03ad00-c2c5-46ca-a1a7-689cbd668a3c",
-    },
-  };
+      };
   const [streamers, setStreamers] = useState([]);
   const [queue, setQueue] = useState([]);
   const [matches, setMatches] = useState([]);
@@ -139,11 +129,16 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>HUB | NESTGO</title>
+        <title>NPL | NEST PRO LEAGUE</title>
       </Head>
-      <main className={styles.main}>
+      <a href="https://www.nestgo.online">
+      <div className="w-2000 h-200 mt-10 ml-10 absolute top-0 left-0">
+        <img className="h-24 w-25" src="/nest_logohw.png" alt="Logo" />
+      </div>
+    </a>
+          <main className={styles.main}>
         <div className="select-header flex gap-2">
-          <select
+                  <select
             onChange={(e) => handleSelectHub(e.target.value)}
             value={
               getFromStorage("hub_selected") ||
@@ -157,18 +152,12 @@ export default function Home() {
             <option className="text-base font-play font-bold" value="CSA">
               NEST PRO LEAGUE | NPL
             </option>
-            <option className="text-base font-play font-bold" value="EU">
-              FPL CSGO Europe
-            </option>
-            <option className="text-base font-play font-bold" value="CEU">
-              FPL C CSGO Europe
-            </option>
           </select>
           <label htmlFor="my-modal" className="ranking-mobile btn modal-button">
-            SEE RANKING
+            VER TOP 10!
           </label>
         </div>
-        <div className="flex flex-col items-center gap-2 mb-8">
+              <div className="flex flex-col items-center gap-2 mb-8">
           <div className="badge badge-accent font-bold font-play bg-orange-600 border-orange-600">
             {matches.length} LIVE MATCH{matches.length != 1 ? "ES" : ""}
           </div>
@@ -177,7 +166,7 @@ export default function Home() {
               tabIndex="0"
               className="badge font-bold font-play badge-primary mb-2"
             >
-              {queue.length} PLAYERS ON QUEUE
+              {queue.length} PLAYERS NA FILA
             </label>
             <ul
               tabIndex="0"
@@ -199,29 +188,29 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div className="content w-full grid gap-4 grid-cols-8">
-          <div className="ranking max-w-fit col-start-1 col-end-3">
-            <div className="text-2xl font-play font-bold mb-4 w-fit">
+                      <div className="content w-full grid gap-4 grid-cols-8">
+                        <div className="ranking max-w-fit col-start-1 col-end-3">
+                      <div className="text-2xl font-play font-bold mb-4 w-fit">
               Ranking{" "}
               <span className="ml-4 stat-desc text-lg font-medium">{` ${formatDate(
                 ranking.leaderboard?.start_date
               )} - ${formatDate(ranking.leaderboard?.end_date)}`}</span>
             </div>
+
             <div className="overflow-x-auto w-full">
               <table className="table w-full">
                 <thead>
                   <tr>
                     <th></th>
-                    <th>Name</th>
-                    <th>Prize</th>
+                    <th>TOP 10!</th>
                   </tr>
                 </thead>
-                <tbody>
+                                <tbody>
                   {ranking.rankings?.slice(0, 10).map((player) => {
                     return (
                       <tr key={player.position}>
                         <td>{player.position}</td>
-                        <td>
+                                                <td>
                           <div className="flex items-center space-x-3">
                             <div className="avatar">
                               <div
@@ -272,21 +261,6 @@ export default function Home() {
                             </div>
                           </div>
                         </td>
-                        <th>
-                          {player.prizes[0]?.image_url ? (
-                            <img
-                              className="h-6 min-w-fit"
-                              src={player.prizes[0]?.image_url}
-                            ></img>
-                          ) : (
-                            <div className="font-normal">
-                              <span className="text-orange-600 font-play font-bold mr-2">
-                                F
-                              </span>
-                              {player.prizes[0]?.faceit_points}
-                            </div>
-                          )}
-                        </th>
                       </tr>
                     );
                   })}
@@ -511,9 +485,8 @@ export default function Home() {
                     <tr>
                       <th></th>
                       <th>Name</th>
-                      <th>Prize</th>
                     </tr>
-                  </thead>
+                    </thead>
                   <tbody>
                     {ranking.rankings?.slice(0, 10).map((player) => {
                       return (
@@ -571,25 +544,6 @@ export default function Home() {
                               </div>
                             </div>
                           </td>
-                          <th>
-                            {player.prizes[0]?.image_url ? (
-                              <img
-                                className="h-6 min-w-fit"
-                                src={
-                                  player.prizes[0]?.image_url
-                                }
-                              ></img>
-                            ) : (
-                              <div className="font-normal">
-                                <span className="text-orange-600 font-play font-bold mr-2">
-                                  F
-                                </span>
-                                {
-                                  player.prizes[0]?.faceit_points
-                                }
-                              </div>
-                            )}
-                          </th>
                         </tr>
                       );
                     })}

@@ -27,9 +27,9 @@ export default function Document() {
         />
         <meta
           name="description"
-          content="Website to watch FPL live matches and twitch streams"
+          content="Página para assistir o HUB da NPL"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/nestlogo.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link
           rel="preconnect"

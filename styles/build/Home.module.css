@@ -112,6 +112,17 @@
   margin-left: 0.5rem;
 }
 
+.nestlogo-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nestlogo {
+  width: 60px;
+  height: 60px;
+}
+
 @media (max-width: 641px) {
   .grid {
     width: 100%;

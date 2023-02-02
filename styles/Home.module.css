@@ -112,6 +112,14 @@
   margin-left: 0.5rem;
 }
 
+.nestlogo-container {
+  position: absolute;
+  top: 30;
+  left: 30;
+  margin-left: 0.5rem;
+}
+
+
 @media (max-width: 641px) {
   .grid {
     width: 100%;
@@ -131,4 +139,8 @@
 }
 .logo img {
   filter: invert(1);
+}
+
+.tabletitle {
+  text-align: center;
 }
