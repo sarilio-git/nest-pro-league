@@ -21,10 +21,7 @@ export default function Document() {
         });
     `}
         </Script>
-        <meta
-          name="google-site-verification"
-          content="d9h0wAMpo4KhnrihbaQ5mfgRPtYxli482bq4Pkfn63k"
-        />
+
         <meta
           name="description"
           content="Página para assistir o HUB da NPL"
