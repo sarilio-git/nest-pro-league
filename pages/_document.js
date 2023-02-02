@@ -37,7 +37,7 @@ export default function Document() {
           crossOrigin
         ></link>
         <link
-          href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Sora:wght@700&display=swap"
           rel="stylesheet"
         ></link>
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
@@ -47,7 +47,7 @@ export default function Document() {
           crossOrigin
         ></link>
         <link
-          href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         ></link>
         <link

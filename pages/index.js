@@ -144,12 +144,12 @@ export default function Home() {
               getFromStorage("hub_selected") ||
               "ef607668-a51a-4ea6-8b7b-dab07e0ab151"
             }
-            className="text-4xl font-play font-bold mb-4 text-center select select-ghost w-fit"
+            className="text-4xl font-sora font-bold mb-4 text-center select select-ghost w-fit"
           >
-            <option className="text-base font-play font-bold" value="SA">
+            <option className="text-base font-sora font-bold" value="SA">
               HUB | NESTGO
             </option>
-            <option className="text-base font-play font-bold" value="CSA">
+            <option className="text-base font-sora font-bold" value="CSA">
               NEST PRO LEAGUE | NPL
             </option>
           </select>
@@ -158,13 +158,13 @@ export default function Home() {
           </label>
         </div>
               <div className="flex flex-col items-center gap-2 mb-8">
-          <div className="badge badge-accent font-bold font-play bg-orange-600 border-orange-600">
+          <div className="badge badge-accent font-bold font-sora bg-orange-600 border-orange-600">
             {matches.length} LIVE MATCH{matches.length != 1 ? "ES" : ""}
           </div>
           <div className="dropdown dropdown-hover dropdown-center">
             <label
               tabIndex="0"
-              className="badge font-bold font-play badge-primary mb-2"
+              className="badge font-bold font-sora badge-primary mb-2"
             >
               {queue.length} PLAYERS NA FILA
             </label>
@@ -190,7 +190,7 @@ export default function Home() {
         </div>
                       <div className="content w-full grid gap-4 grid-cols-8">
                         <div className="ranking max-w-fit col-start-1 col-end-3">
-                      <div className="text-2xl font-play font-bold mb-4 w-fit">
+                      <div className="text-2xl font-sora font-bold mb-4 w-fit">
               Ranking{" "}
               <span className="ml-4 stat-desc text-lg font-medium">{` ${formatDate(
                 ranking.leaderboard?.start_date
@@ -227,7 +227,7 @@ export default function Home() {
                               </div>
                             </div>
                             <div>
-                              <div className="font-medium font-play text-sm">
+                              <div className="font-medium font-sora text-sm">
                                 {player.placement.entity_name}
                               </div>
                               {verifyStream(player.placement.entity_id) ? (
@@ -344,7 +344,7 @@ export default function Home() {
                             />
                           </figure>
                           <div className="map-card-body h-8 flex items-center justify-center">
-                            <h2 className="text-gray-200 font-play text-base mx-auto">
+                            <h2 className="text-gray-200 font-sora text-base mx-auto">
                               {
                                 getMap(
                                   match.voting?.map.entities,
@@ -376,7 +376,7 @@ export default function Home() {
                                   <img src={player.avatar} />
                                 </div>
                               </div>
-                              <div className="flex flex-col font-play text-gray-400 font-medium text-base">
+                              <div className="flex flex-col font-sora text-gray-400 font-medium text-base">
                                 {player.nickname}
                                 {verifyStream(player.id) ? (
                                   <a
@@ -414,7 +414,7 @@ export default function Home() {
                               key={player.id}
                               className="flex p-1 h-10 gap-2 items-center"
                             >
-                              <div className="flex flex-col font-play items-end font-medium text-gray-400 text-base">
+                              <div className="flex flex-col font-sora items-end font-medium text-gray-400 text-base">
                                 {player.nickname}
                                 {verifyStream(player.id) ? (
                                   <a
@@ -473,7 +473,7 @@ export default function Home() {
               ✕
             </label>
             <div>
-              <div className="text-2xl font-play font-bold mb-4 w-fit">
+              <div className="text-2xl font-sora font-bold mb-4 w-fit">
                 Ranking{" "}
                 <span className="ml-4 stat-desc text-lg font-medium">{` ${formatDate(
                   ranking.leaderboard?.start_date
@@ -509,7 +509,7 @@ export default function Home() {
                                 </div>
                               </div>
                               <div>
-                                <div className="font-medium font-play text-sm">
+                                <div className="font-medium font-sora text-sm">
                                   {player.placement.entity_name}
                                 </div>
                                 {verifyStream(player.placement.entity_id) ? (
