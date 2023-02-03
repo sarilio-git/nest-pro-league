@@ -86,7 +86,7 @@ export default function Home() {
         return {
           class_name: "Picking map",
           image_lg:
-            "https://quoramarketing.com/wp-content/uploads/2022/09/CSGO-All-Maps-in-Competitive-Pool-Active-Duty.jpg",
+            "https://i0.wp.com/thegamerstation.com/wp-content/uploads/2022/12/Valorant-Maps.jpg?resize=1024%2C576&ssl=1",
         };
       return allMaps[0];
     }
