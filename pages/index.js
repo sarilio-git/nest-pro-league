@@ -568,17 +568,8 @@ export default function Home() {
           rel="noopener noreferrer"
         ><span className="text-center text">GAME ON, LEARN ON</span>
         </a>
-        <a
-          className="font-medium max-w-fit"
-          href="https://github.com/Conrage"
-          target="blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className="font-medium text-blue-500 text-center">Crazynn</span>
-        </a>
-                </div>
-          </footer>
+        </div>
+                  </footer>
     </div>
   );
 }
