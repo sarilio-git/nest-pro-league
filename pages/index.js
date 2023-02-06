@@ -147,10 +147,10 @@ export default function Home() {
             className="text-4xl font-bold mb-4 text-center select select-ghost w-fit"
           >
             <option className="text-base font-bold" value="SA">
-              HUB | NESTGO
+            NEST PRO LEAGUE | NPL
             </option>
             <option className="text-base font-bold" value="CSA">
-              NEST PRO LEAGUE | NPL
+            HUB | NESTGO
             </option>
           </select>
           <label htmlFor="my-modal" className="ranking-mobile btn modal-button">
