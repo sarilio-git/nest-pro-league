@@ -19,7 +19,7 @@ export default function Home() {
   const translateId = {
     SA: {
       hub_id: "74effb8b-0155-4ae5-9a3a-3097c9833b7d",
-      queue_id: "63d994246d84301789b0d428",
+      queue_id: "63dbc80f44005d648e8a323f",
       leaderboard_id: "63dc08555ca9066d45790e1a",
     },
     CSA: {
