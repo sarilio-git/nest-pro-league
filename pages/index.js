@@ -158,7 +158,7 @@ export default function Home() {
           </label>
         </div>
               <div className="flex flex-col items-center gap-2 mb-8">
-          <div className="badge badge-accent font-bold bg-orange-600 border-orange-600">
+          <div className="badge badge-accent font-bold bg-warning border-yellow-600">
             {matches.length} LIVE MATCH{matches.length != 1 ? "ES" : ""}
           </div>
           <div className="dropdown dropdown-hover dropdown-center">
